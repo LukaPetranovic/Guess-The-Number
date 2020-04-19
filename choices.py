@@ -47,11 +47,13 @@ def choice2():
             if guessCounter == 9:
                 print("Sorry, out of tries. Number was {}.".format(randomNumber))
             else:
-                print("I can't say are you close, but it is higher than that.")
+                print("Could it be {}? But it is definitely higher than {}.".format(
+                    random.choice(range(userInput, highestLimit)), userInput))
             guessCounter += 1
         elif userInput > randomNumber:
             if guessCounter == 9:
                 print("That's it, you ran out of tries. Number was {}.".format(randomNumber))
             else:
-                print("5, 500, 50 000, who knows. But it is definitely lower than that.")
+                print("Why not try {}? Maybe luck is on your side. But it is definitely lower"
+                      " than {}.".format(random.choice(range(lowestLimit, userInput)), userInput))
             guessCounter += 1
