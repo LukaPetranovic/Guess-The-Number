@@ -16,7 +16,7 @@ while True:
 
         playAgainFlag = True
         while True:
-            again = input("Do you want to play again?\nNOTE: New number will get selected.\nY/N\n").lower()
+            again = input("Do you want to play again?\nNOTE: New number will be randomized.\nY/N\n").lower()
             if again == "y":
                 break
             elif again == "n":
